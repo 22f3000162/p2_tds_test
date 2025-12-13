@@ -1,3 +1,12 @@
+---
+title: Hybrid Quiz Solver
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # 🤖 Hybrid Quiz Solver Agent
 
 > **An enterprise-grade, autonomous AI agent for solving multi-step quiz questions using LangGraph with intelligent LLM orchestration.**
