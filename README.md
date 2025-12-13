@@ -388,5 +388,5 @@ MIT License - Free for personal and commercial use.
 <p align="center">
   <b>Built with LangGraph • Gemini • OpenAI • FastAPI</b>
   <br>
-  <sub>Made with ❤️ for the TDS community</sub>
+  <sub>Made with ❤️</sub>
 </p>
