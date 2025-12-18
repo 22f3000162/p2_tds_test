@@ -13,9 +13,6 @@ from tenacity import (
     retry_if_exception_type,
 )
 
-# --------------------------------------------------
-# GLOBAL CLIENT + LOCK
-# --------------------------------------------------
 _client: Optional[httpx.AsyncClient] = None
 _client_lock = asyncio.Lock()
 
