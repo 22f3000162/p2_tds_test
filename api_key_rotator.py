@@ -1,9 +1,3 @@
-"""
-API Key Rotation Manager for avoiding rate limits.
-Cycles through multiple Google API keys safely.
-Logs all activity (usage, rotation, exhaustion).
-"""
-
 import os
 import threading
 from typing import List
