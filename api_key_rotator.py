@@ -23,9 +23,6 @@ class APIKeyRotator:
 
         _log(f"Loaded {len(self._api_keys)} API key(s)")
 
-    # --------------------------------------------------
-    # LOAD KEYS
-    # --------------------------------------------------
     def _load_api_keys(self) -> List[str]:
         keys = []
 
@@ -80,9 +77,6 @@ class APIKeyRotator:
         with self._lock:
             return self.key_count - len(self._exhausted_keys)
 
-    # --------------------------------------------------
-    # ROTATION / EXHAUSTION
-    # --------------------------------------------------
     def rotate_to_next_key(self):
         """Manually rotate to the next available key."""
         with self._lock:
@@ -120,17 +114,11 @@ class APIKeyRotator:
             self._all_exhausted = False
             _log("✓ Exhaustion state reset")
 
-    # --------------------------------------------------
-    # PROPERTIES
-    # --------------------------------------------------
     @property
     def key_count(self) -> int:
         return len(self._api_keys)
 
 
-# --------------------------------------------------
-# GLOBAL SINGLETON ACCESS
-# --------------------------------------------------
 _rotator: APIKeyRotator | None = None
 
 
